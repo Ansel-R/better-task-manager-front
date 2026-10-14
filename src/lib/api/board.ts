@@ -50,3 +50,11 @@ export async function getBoardRequest(): Promise<Board[]> {
     token: token,
   });
 }
+
+export async function getBoardIdRequest(boardId: number): Promise<Board> {
+    const token = getCookie ("auth_token")
+  return apiFetch<Board>(`/board/${boardId}`, {
+    method: "GET",
+    token: token,
+  });
+}

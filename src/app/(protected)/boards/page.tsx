@@ -9,14 +9,17 @@ import { Boardview } from "@/components/boards/board-view";
 
 export default function Home() {
   return (
-    <div className="h-full bg-dark1 flex flex-col flex-1 items-center justify-center">
-      <main className="flex flex-1 flex-col items-center justify-between py-32 px-16 sm:items-start">
-        {/* <Button>Button</Button> */}
-        {/* <Column/> */}
-        {/* <Newtask/> */}
-        {/* <Addcolumn/> */}
-        <Boardview/>
-      </main>
-    </div>
-  );
+    // <div className="h-full min-w-0 bg-dark1 flex flex-col flex-1">
+    //         <main className="flex flex-1 min-w-0 flex-col">
+    //             <Boardview />
+    //         </main>
+    //     </div>
+
+    
+    <div className="h-full min-w-0 bg-dark1">
+            <main className="flex flex-1 min-w-0 flex-col">
+                <Boardview />
+            </main>
+        </div>
+    );
 }

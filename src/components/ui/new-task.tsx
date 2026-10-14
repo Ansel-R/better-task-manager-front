@@ -42,7 +42,7 @@ export const Newtask = () => {
             </Field>    
             <Field>
               <Label htmlFor="username-1" className="text-white-custom text-xs">DESCRPTION</Label>
-              <Textarea className="pl-4 min-h-30 text-white-custom rounded-xl border border-white/10 bg-transparent text-base focus-visible:border-ring focus-visible:ring-1 focus-visible:ring-primary/44" id="username-1" name="username" placeholder="Add a drescription..." />
+              <Textarea className="pl-4 h-30 resize-none overflow-y-auto text-white-custom rounded-xl border border-white/10 bg-transparent text-base focus-visible:border-ring focus-visible:ring-1 focus-visible:ring-primary/44" id="username-1" name="username" placeholder="Add a drescription..." />
               {/* <Textarea className="pl-4 text-white-custom resize-none h-12 rounded-xl w-full min-w-0 border border-white/10 bg-transparent text-base transition-colors outline-none file:inline-flex file:h-6 file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-1 focus-visible:ring-primary/44 disabled:pointer-events-none disabled:cursor-not-allowed disabled:bg-input/50 disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 md:text-sm dark:bg-input/30 dark:disabled:bg-input/80 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40" placeholder="Add a drescription..."/> */}
             </Field>
             <Field>

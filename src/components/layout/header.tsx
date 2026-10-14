@@ -21,26 +21,12 @@ import { useBoard } from "@/context/user-context"
 
 
 export const Header = () => {
-    const [boards, setBoards] = useState<Board[]>([]);
     const [error, setError] = useState<string | null>(null);
 
-    const { selectedBoard, updateSelectedBoard } = useBoard();
+    const { selectedBoard, updateSelectedBoard, boards} = useBoard();
 
     
-  useEffect(() => {
-    const fetchBoards = async () => {
-      try {
-        const data = await getBoardRequest();
-        setBoards(data);
-        updateSelectedBoard(data[0]);
-      } catch (err) {
-        setError("Error al obtener los boards");
-        console.error(err);
-      }
-    };
-
-    fetchBoards();
-  }, []);
+ 
 
 //   if (error) return <p>{error}</p>;
 
@@ -51,7 +37,7 @@ export const Header = () => {
 
 
 
-    return <div className="flex w-full items-center justify-between py-5 pl-8 pr-8 border border-white/6">
+    return <div className="flex w-full items-center justify-between py-5 px-8 border border-white/6">
         {/* <SidebarTrigger /> */}
             {/* <p className="min-w-45 min-h-10 flex bg-dark3 text-white py-2 pl-4 pr-11 border-[1.25px] border-white/6 rounded-[10px]">
             Main Board
@@ -87,7 +73,7 @@ export const Header = () => {
             </div>
                 
 
-        <div className="flex">
+            <div className="">
             {/* <Button className="flex min-w-10 min-h-10 px-4 py-2.5 bg-primary text-dark1 font-semibold border-[1.25px] border-white/6 rounded-[10px]">
                 <Plus className="min-w-4 min-h-4 text-dark1"/>
             Add Board
@@ -108,7 +94,7 @@ export const Header = () => {
             </Button> */}
             
 
-        </div>
+            </div>
         
     </div>
 }

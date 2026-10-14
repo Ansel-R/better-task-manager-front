@@ -19,9 +19,10 @@ export default async function ProtectedLayout({ children }: { children: React.Re
   <SidebarProvider>
      <AppSidebar />
 
-    <div className="w-full overflow-hidden bg-dark1">
-        <Header/>
-        <div className="h-full">{children}</div>
+      <div className="w-full min-w-0 bg-dark1">
+        <Header />
+
+        <div className="min-w-0 flex px-8">{children}</div>
     </div>
 
   </SidebarProvider>

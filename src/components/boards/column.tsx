@@ -5,7 +5,7 @@ import { Line } from '@/lib/api/board';
 
 export const Column = ({column}: {column: Line}) => {
     
-    return <div className="bg-dark2 rounded-[20px] border-[1.25px] border-white/6 min-w-8   0 min-h-100 p-5">
+    return <div className="bg-dark2 rounded-[20px] border-[1.25px] border-white/6 min-w-80 min-h-100 p-5">
 
         <div className='flex items-center justify-between'>
             <Image

@@ -73,11 +73,11 @@ export const Newboard = () => {
     <Dialog open={openDialog} onOpenChange={()=>{setOpenDialog(!openDialog)}}>
       <DialogTrigger asChild>
         <Button
-          className="flex min-w-10 min-h-10 px-4 py-2.5 bg-primary text-dark1 font-semibold border-[1.25px] border-white/6 rounded-[10px]"
+          className="flex w-30 h-10 px-4 py-2.5 bg-primary text-dark1 font-semibold border-[1.25px] border-white/6 rounded-[10px]"
           variant="outline"
           onClick={()=>{setOpenDialog(true)}}
         >
-          <Plus className="min-w-4 min-h-4 text-dark1" />
+          <Plus className="min-w-4 min-h-4 text-dark1 " />
           Add Board
         </Button>
       </DialogTrigger>
@@ -106,7 +106,9 @@ export const Newboard = () => {
               <FieldError className="text-red" errors={[form.formState.errors.title]} />
             </Field>
 
-            <Field>
+
+            {/* descripcion de agregar board */}
+            {/* <Field>
               <Label htmlFor="description" className="text-white-custom text-xs">
                 DESCRIPTION
               </Label>
@@ -114,12 +116,12 @@ export const Newboard = () => {
               <Textarea
                 id="description"
                 placeholder="Add a description..."
-                className="pl-4 min-h-30 text-white-custom rounded-xl border border-white/10 bg-transparent text-base focus-visible:border-ring focus-visible:ring-1 focus-visible:ring-primary/44"
+                className="pl-4 h-30 resize-none overflow-y-auto text-white-custom rounded-xl border border-white/10 bg-transparent text-base focus-visible:border-ring focus-visible:ring-1 focus-visible:ring-primary/44"
                 {...form.register("description")}
               />
 
               <FieldError className="text-red" errors={[form.formState.errors.description]} />
-            </Field>
+            </Field> */}
           </FieldGroup>
 
           <DialogFooter>
